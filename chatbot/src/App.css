@@ -1,0 +1,204 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: rgb(63, 23, 101);
+  color: whitesmoke;
+  font-family: Calibri, sans-serif;
+}
+
+/* Layout */
+.App {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  flex: 3;
+  border-right: 1px solid whitesmoke;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.main {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+.chats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.chatFooter {
+  padding: 20px;
+  background: rgba(219, 207, 207, 0.919);
+}
+
+/* Input Section */
+.inp {
+  display: flex;
+  gap: 10px;
+}
+
+.inp input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+.inp button.send {
+  background: #4CAF50;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Logo and Sidebar Top */
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.upperSideTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.midBtn {
+  width: 200px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.addBtn {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Chat Styles */
+.chat {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  text-align: justify;
+  width: fit-content;
+  border-radius: 0.5rem;
+  max-width: 100%;
+  background: rgb(163, 163, 174);
+}
+
+.chat.left {
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.chat.right {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  align-self: flex-end;
+}
+
+.chat img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+/* Chat Bubbles */
+.txt {
+  background-color: #f1f1f1;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: black;
+}
+
+.chat.right .txt {
+  background-color: #daf8cb;
+}
+
+/* Icons */
+.botIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #5e17eb;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.userIcon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #00b894;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.voiceIcon {
+  width: 40px;
+  height: 30px;
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+  background-color: rgb(18, 17, 17);
+  border: 1px solid #131212;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 150px;
+  position: absolute;
+  z-index: 10;
+}
+
+.dropdownItem {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #111111;
+}
+
+.dropdownItem:hover {
+  background-color: #570f76;
+}
