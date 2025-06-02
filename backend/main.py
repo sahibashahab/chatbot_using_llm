@@ -19,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "groq api "
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 HEADERS = {"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"}
 
